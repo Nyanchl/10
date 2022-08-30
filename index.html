@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>10進数からn進数へ</title>
+<h1>10進数からn進数に変換</h1>
+<body>
+    <div class="text">
+        <form name="number">
+            <input type="text" name="" value="">: 数字<br>
+            <input type="text" name="" value="">: 2進数<br>
+            <input type="text" name="" value="">: 3進数<br>
+            <input type="text" name="" value="">: 4進数<br>
+            <input type="text" name="" value="">: 5進数<br>
+            <input type="text" name="" value="">: 6進数<br>
+            <input type="text" name="" value="">: 7進数<br>
+            <input type="text" name="" value="">: 8進数<br>
+            <input type="text" name="" value="">: 9進数<br>
+            <input type="text" name="" value="">:11進数<br>
+            <input type="text" name="" value="">:12進数<br>
+            <input type="text" name="" value="">:13進数<br>
+            <input type="text" name="" value="">:14進数<br>
+            <input type="text" name="" value="">:15進数<br>
+            <input type="text" name="" value="">:16進数<br>
+            <input type="button" value="変換" onclick="toBinary()"><br>
+        </form>
+
+<script>
+
+function toBinary(){
+        var number = parseInt(document.number.elements[0].value);
+        document.number.elements[1].value = number.toString(2)
+        document.number.elements[2].value = number.toString(3)
+        document.number.elements[3].value = number.toString(4)
+        document.number.elements[4].value = number.toString(5)
+        document.number.elements[5].value = number.toString(6)
+        document.number.elements[6].value = number.toString(7)
+        document.number.elements[7].value = number.toString(8)
+        document.number.elements[8].value = number.toString(9)
+        document.number.elements[9].value = number.toString(11)
+        document.number.elements[10].value = number.toString(12)
+        document.number.elements[11].value = number.toString(13)
+        document.number.elements[12].value = number.toString(14)
+        document.number.elements[13].value = number.toString(15)
+        document.number.elements[14].value = number.toString(16)
+}
+</script>
+</div>
+</body>
